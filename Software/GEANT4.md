@@ -44,7 +44,7 @@
     $ cd geant4-build
     $ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/geant4-install/ -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON GEANT4_BUILD_MULTITHREADED=ON ../geant4.10.04
     ```
-    注意各路径的正确。其中各选项含义如下
+    注意各路径的正确。其中各选项含义如下  
 
 | 选项                          | 意义             |
 | :---------------------------: | :--------------: |
@@ -53,11 +53,13 @@
 | -DGEANT4_USE_RAYTRACE_X11     | 径迹追踪使用X11  |
 | -DGEANT4_USE_QT=ON            | 使用QT           |
 | GEANT4_BUILD_MULTITHREADED=ON | 编译时使用多线程 |
+  
+    CMake之后使用make编译源码  
 
-    CMake之后使用make编译源码
     ```shell
     $ make -j4
-    ```
+    ```  
+    
     -j4 在此处意为编译时使用4个线程，可根据电脑核数自行指定。
     
     *本人电脑上编译大概耗时2小时*
