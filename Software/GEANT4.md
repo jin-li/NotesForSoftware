@@ -45,6 +45,7 @@
     $ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/geant4-install/ -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON GEANT4_BUILD_MULTITHREADED=ON ../geant4.10.04
     ```
     注意各路径的正确。其中各选项含义如下
+
 | 选项                          | 意义             |
 | :---------------------------: | :--------------: |
 | -DCMAKE_INSTALL_PREFIX        | 指定安装目录     |
@@ -52,6 +53,7 @@
 | -DGEANT4_USE_RAYTRACE_X11     | 径迹追踪使用X11  |
 | -DGEANT4_USE_QT=ON            | 使用QT           |
 | GEANT4_BUILD_MULTITHREADED=ON | 编译时使用多线程 |
+
     CMake之后使用make编译源码
     ```shell
     $ make -j4
