@@ -138,7 +138,7 @@
      ```
      此命令会打开一个包含`crontab`定时任务的配置文件，在文件末尾加入一行
      ```shell
-     42 * * * * python3 ~/.config/aliyun-ddns-client/ddns.py
+     42 * * * * cd ~/.config/aliyun-ddns-client ipython3 ddns.py
      ```
      即可。
    - 之后可以使用如下命令查看`crontab`定时任务是否在运行：
